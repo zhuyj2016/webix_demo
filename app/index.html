@@ -10,6 +10,20 @@
 	<!-- App -->
 	<script type="text/javascript" src="codebase/myapp.js"></script>
 	<link rel="stylesheet" type="text/css" href="codebase/myapp.css">
+
+	<script type="text/javascript">
+
+		var serverPath = "/rest/yun";
+		webix.ready(function(){
+			if (webix.CustomScroll)
+				webix.CustomScroll.init();
+
+			//wfadmin 对应 webpack.config.js中的output中的library: "webixdemo"
+			//前提是app.js中的 export {App};
+			const app = new webixdemo.App();
+			app.render(document.body);
+		});
+	</script>
 </head>
 <body></body>
 </html>

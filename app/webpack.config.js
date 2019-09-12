@@ -23,7 +23,8 @@ module.exports = function(env) {
 			path: path.join(__dirname, "codebase"),
 			publicPath:"/codebase/",
 			filename: "[name].js",
-			chunkFilename: "[name].bundle.js"
+			chunkFilename: "[name].bundle.js",
+			library: "webixdemo"
 		},
 		module: {
 			rules: [
