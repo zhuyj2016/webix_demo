@@ -63,7 +63,15 @@ module.exports = function(env) {
 			})
 		],
 		devServer:{
-			stats:"errors-only"
+			stats:"errors-only",
+			disableHostCheck: true,
+			proxy: {
+				"/rest/webixdemo":{
+					changeOrigin:true,
+					target: "http://localhost:8086/webixdemo",
+					pathRewrite: {"^/rest/webixdemo" : ""}
+				}
+			}
 		}
 	};
 

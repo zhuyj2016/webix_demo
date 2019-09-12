@@ -14,8 +14,8 @@ export default class TopView extends JetView{
 			width:180, layout:"y", select:true,
 			template:"<span class='webix_icon #icon#'></span> #value# ",
 			data:[
-				{ value:"Dashboard", id:"start", icon:"wxi-columns" },
-				{ value:"Data",		 id:"data",  icon:"wxi-pencil" }
+				{ value:"首页", id:"index", icon:"wxi-columns" },
+				{ value:"数据中心",	id:"data",  icon:"wxi-pencil" }
 			]
 		};
 

@@ -1,17 +1,24 @@
+import session from "models/session";
+import {plugins} from "webix-jet";
 import "./styles/app.css";
-import {JetApp, EmptyRouter, HashRouter } from "webix-jet";
+import { JetApp } from "webix-jet";
+import { webix_zh_CN } from "locales/webix/zh.js";
 
 export default class App extends JetApp{
 	constructor(config){
 		const defaults = {
 			id 		: APPNAME,
 			version : VERSION,
-			router 	: BUILD_AS_MODULE ? EmptyRouter : HashRouter,
 			debug 	: !PRODUCTION,
-			start 	: "/top/start"
+			start 	: "/top/index",
+			css:"/styles/app.css",
+			ping:1,
 		};
-
 		super({ ...defaults, ...config });
+
+		this.use(plugins.User, { model: session });
+		webix.i18n.locales["zh-CN"] = webix_zh_CN;
+		webix.i18n.setLocale("zh-CN");
 	}
 }
 
