@@ -5,7 +5,7 @@ import {JetView, plugins} from "webix-jet";
 export default class TopView extends JetView{
 	config(){
 		var header = {
-			type:"header", template:this.app.config.name, css:"webix_header app_header"
+			type:"header", template:"我的webix demo", css:"webix_header app_header"
 		};
 
 		var menu = {

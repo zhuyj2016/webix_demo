@@ -17,7 +17,7 @@ module.exports = function(env) {
 	var config = {
 		mode: production ? "production" : "development",
 		entry: {
-			myapp: "./sources/app.js"
+			app: "./sources/app.js"
 		},
 		output: {
 			path: path.join(__dirname, "codebase"),
