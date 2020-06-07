@@ -5352,6 +5352,10 @@ webix-jet@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/webix-jet/-/webix-jet-2.0.4.tgz#cd9606c8fc4844459926ca7833285525f38f8390"
 
+webix@^6.4.0:
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/webix/-/webix-6.4.0.tgz#6a151f5e0ad676478b346381030494092714a03a"
+
 webpack-cli@^3.0.8:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-3.0.8.tgz#90eddcf04a4bfc31aa8c0edc4c76785bc4f1ccd9"
@@ -5474,8 +5478,8 @@ websocket-driver@>=0.5.1:
     websocket-extensions ">=0.1.1"
 
 websocket-extensions@>=0.1.1:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.2.tgz#0e18781de629a18308ce1481650f67ffa2693a5d"
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.4.tgz#7f8473bc839dfd87608adb95d7eb075211578a42"
 
 whet.extend@~0.9.9:
   version "0.9.9"
